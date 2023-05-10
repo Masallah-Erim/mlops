@@ -93,10 +93,10 @@ plot_predictions(train_data=X_train, train_labels=y_train,  test_data=X_test, te
 
 
 # Calculate model_1 metrics
-mae_1 = np.round(float(mae(y_test, y_preds.squeeze()).numpy()), 2)
-mse_1 = np.round(float(mse(y_test, y_preds.squeeze()).numpy()), 2)
-print(f'\nMean Absolute Error = {mae_1}, Mean Squared Error = {mse_1}.')
+# mae_1 = np.round(float(mae(y_test, y_preds.squeeze()).numpy()), 2)
+# mse_1 = np.round(float(mse(y_test, y_preds.squeeze()).numpy()), 2)
+# print(f'\nMean Absolute Error = {mae_1}, Mean Squared Error = {mse_1}.')
 
-# Write metrics to file
-with open('metrics.txt', 'w') as outfile:
-    outfile.write(f'\nMean Absolute Error = {mae_1}, Mean Squared Error = {mse_1}.')
+# # Write metrics to file
+# with open('metrics.txt', 'w') as outfile:
+#     outfile.write(f'\nMean Absolute Error = {mae_1}, Mean Squared Error = {mse_1}.')
